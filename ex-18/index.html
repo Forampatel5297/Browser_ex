@@ -35,7 +35,21 @@
     }
   </style>
 <script>
- 
+ window.onload = function() {
+const firtLinkElement = document.querySelector("a");
+
+  const addClass = function() {
+    const hasAttribute = firtLinkElement.hasAttribute("class");
+    if (hasAttribute) {
+      firtLinkElement.classList.add("blue");
+    } else {
+      firtLinkElement.classList.add("red");
+      firtLinkElement.classList.add("menu");
+    }
+  };
+
+  addClass();
+};
 </script>
 
 </head>
