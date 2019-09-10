@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = function () {
+            const body = document.querySelector('body');
+            const nameList = ['foram', 'akshay', 'shreya', 'perina', 'ishan','priya','vruttik','ronak','bony','khush'];
+            const listElemtnt = document.createElement('ul');
+            const createList = function (name) {
+                let listItem = document.createElement('li');
+                listItem.innerHTML = name;
+                listElemtnt.appendChild(listItem);
+            }
+            
+            nameList.forEach(createList);
+            body.appendChild(listElemtnt);
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
